@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="top-area"></div>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Let us know how we can improve FreeCodeCamp</p>
+        </header>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" value="" required/>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" value="" required/>
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" min="1" max="125" placeholder="Enter your age" value="" required/>
+            <label for="dropdown">Which option best describes your current role</label>
+            <select id="dropdown">
+            <option value="o1">Student</option>
+            <option value="o2">Full Time Job</option>
+            <option value="o3">Full Time Learner</option>
+            <option value="o4">Prefer Not To Say</option>
+            <option value="o5">Other</option>
+        </select>
+            <label for="radios">
+            How likely is that you would recommend freeCodeCamp to a friend?
+        </label>
+            <div id="radios">
+                <input type="radio" value="v1" name="grp1" checked/> Definitely <br/>
+                <input type="radio" value="v2" name="grp1" /> Maybe <br/>
+                <input type="radio" value="v3" name="grp1" /> Not Sure <br/>
+            </div>
+            <label for="checkboxes">
+            Things that should be improved in the future
+            (Check all that apply)
+        </label>
+            <div id="checkboxes">
+                <input type="checkbox" value="frontend" /> Front End <br />
+                <input type="checkbox" value="backend" /> Back End <br />
+                <input type="checkbox" value="challenges" /> Challenges <br />
+            </div>
+
+            <label for="comment">
+            Any Comments Or Suggestions ? 
+        </label>
+            <textarea cols="30" id="comment" rows="5"></textarea>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+    <footer>
+        by <a href="#"> Oussama El Arbaoui </a>
+        2018 &copy;
+    </footer>
+</body>
+
+</html>
